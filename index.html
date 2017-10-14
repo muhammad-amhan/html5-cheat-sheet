@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+<title> </title>
+
+<head>
+    <title>Practice</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h3>HTML5 Course Practice</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li> 
+            <li>Services</li> 
+            <li>Contact Us</li> 
+        </ul>
+    </nav>
+    <main>
+        <p>Weclome to the html5 course from Elzero</p>
+    </main>
+
+    <div class="article-container">
+        <article>
+            <header>
+                <h4>Article #1</h4>
+                <p>Created by Muhammad Amhan on 03/08/2017</p> 
+            </header>
+            <section class="article_body">
+                <div id="username"> 
+                    <label>Username: </label>
+                    <input type="text" form="form" placeholder="this belong to the form section below" formnovalidate required autocomplete="off" autofocus="on" pattern="[a-z]{16}" />
+                </div>
+                <div>
+                    <p>Web Development: <progress min="0" max="100" value="65"></progress></p>
+                    <p>Java Development: <progress min="0" max="100" value="75"></progress></p>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <header>
+                <h4>Article #2</h4>
+                <p>This is about &lt;details&gt;</p> 
+            </header>
+            <section class="article_body">
+                <p> This is article content number two
+                <details> 
+                    <summary> 
+                        <mark>References</mark>
+                    </summary>
+                    <ul>
+                        <li>Reference One</li>
+                        <li>Reference Two</li>
+                        <li>Reference Three</li>
+                    </ul> 
+                </details>
+            </section>
+        </article>
+        
+        <article>
+            <header>
+                <h4>Article #3</h4>
+                <p>This is about &lt;wbr&gt;</p> 
+            </header>
+            <section class="article_body">
+               <p>This is long paragprag <wbr>so it will break to the  <wbr>next line as you can see. So we're gonna use something to break it <wbr> we want to.</p>
+            </section>
+        </article>
+
+        <article>
+            <header>
+                <h4>Article #4</h4>
+                <p>This is about using &lt;figure&gt;</p> 
+            </header>
+            <section class="article_body">
+                <div>
+                    <p>This code describes the div syntax</p>
+                </div>
+                <figure>
+                    <figcaption>This is div syntax (figure 1.1)</figcaption>
+                    <code>&lt;div&gt; this is the normal syntax for div &lt;/div&gt;</code>
+                </figure>
+            </section>
+        </article>
+
+         <article>
+            <header>
+                <h4>Article #5</h4>
+                <p>This is about using &lt;audio&gt;</p> 
+            </header>
+            <section class="article_body">
+                <div>
+                    <p>Enjoy my fav clip from Troy:</p>
+                </div>
+                <video preload="auto" poster="images/beast.jpg" controls width="300px" height="300px"> 
+                    <source src="media/moment.mp4" type="video/mp4">
+                    Your browser doesn't support this video
+                </video>
+            </section>
+        </article>
+
+         <article>
+            <header>
+                <h4>Article #6</h4>
+                <p>This is about using new form input field types with some attributes </p> 
+            </header>
+            <section class="article_body" target="_blank" action="#" method="GET">
+                <form autocomplete="off" id="form">
+                    <label>Colour (black initial value):</label>
+                    <input type="color" name="theme" value="#000000" autofocus="on"/>
+
+                    <label>Number (min = 1 and max = 150):</label>
+                    <input type="number" name="age" min="1" max="150" />
+                    
+                    <label> Range (min = 0 and max = 10 step by 2):</label>
+                    <input type="range" min="0" max="10" step="2" />
+
+                    <label>Search input is made easy:</label>
+                    <input type="search" name="search" />
+
+                    <label>This is for email input:</label>
+                    <input type="email" name="email" />
+
+                    <label>This is for telephone info:</label>
+                    <input type="tel" name="mobile" />
+
+                    <label>Link input:</label>
+                    <input type="url" name="link" />
+
+                    <label>Time input: </label>
+                    <input type="time" name="time"/>
+
+                    <label>Datetime input:</label>
+                    <input type="datetime-local" name="datetime" />
+
+                    <label>Date input:</label>
+                    <input type="date" name="date" />
+
+                    <label>Month input (important one):</label>
+                    <input type="month" name="month" />
+
+                    <label>Week input (important one):</label>
+                    <input type="week" name="week" />
+
+                    <input type="submit" name="send" value="send" />
+                    <input type="reset" name="reset" value="reset" />
+                </form>
+            </section>
+        </article>
+    </div>
+
+    <aside class="first-aside"> 
+        <section class="side-list">
+            <h4>Header</h4>
+            <ul>
+                <li>Intro</li>
+                <li>Semantics</li>
+                <li>API</li>
+                <li>New Attributes</li>
+            </ul>
+        </section>
+    </aside>
+    
+    <aside> 
+        <section>
+            <h4>Performacne</h4>
+            <div class="cpu_meter"> 
+                CPU: <meter min="0" max="2" value="0.3" low="0.5" high="1.7" optimum="1"></meter>
+            </div>
+        </section>
+    </aside>
+
+    <aside> 
+        <section class="top-member">
+            <h4>Top Members</h4>
+            <div> 
+                <ul> 
+                    <li>Osama: 90 points</li>
+                    <li>Muhammad: 70 points</li>
+                    <li><bdi>:امجد</bdi> 75 points</li>
+                </ul>
+            </div>
+        </section>
+    </aside>
+
+    <aside> 
+        <section class="poll">
+            <h4>What is your favourite browser?</h4>
+            <div> 
+                <form>
+                    <input list="browsers">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Safari">
+                        <option value="Opera">
+                    </datalist>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </section>
+    </aside>
+
+    <aside class="age-in-days"> 
+        <section>
+            <h4>Your age in days</h4>
+            <div> 
+                <form oninput="results.value = parseInt(age.value) * parseInt(days.value)"> 
+                    <span>Your age:</span><input type="number" name="age" min="1" max="150" /> 
+                              <input type="hidden" name="days" value="365" />
+                    <output name="results"> results...</output>
+                </form>
+            </div>
+        </section>
+    </aside>
+
+    <aside class="troy-audio"> 
+        <section class="article_body">
+            <h4>Troy soundtrack, Hitcor's death:</h4>
+            <div>
+                <p>Yo listen to Troy soundtrack! Hictor's death.</p>
+            </div>
+            <audio controls src="media/troy.mp3" preload="auto" type="audio/mpeg"> 
+                This audio isn't supported in your browser...
+            </audio>
+            </audio>
+        </section>
+    </aside>
+
+    <aside class="readonly-disabled"> 
+        <section class="article_body">
+            <h4>Readonly and disabled attributes:</h4>
+            <div>
+                <label>Read-only field - </label>
+                <input type="text" name="readonly" value="Read only, copy!" readonly />
+
+                <label>Disabled field - </label>
+                <input type="text" name="disabled" value="This is disabled." disabled />
+            </div>
+        </section>
+    </aside>
+    
+    <div class="clear-fix"></div>
+
+    <footer> 
+        <p>Copyright &copy 2017 All Rights Reserved to Elzero</p>
+    </footer>
+</body>
+
+
+</html>

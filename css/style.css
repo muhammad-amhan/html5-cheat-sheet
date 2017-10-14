@@ -1,0 +1,239 @@
+/* Gloabal */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header styling */ 
+
+header {
+    text-align: center;
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header h3 {
+    padding: 20px;
+}
+
+/* styling the navigation */
+
+nav {
+    background-color: #ddd;
+}
+
+nav ul {
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 18px;
+}
+
+nav ul li::after {
+    content: " | ";
+}
+
+nav ul li:last-child:after {
+    content: " ";
+}
+
+/* styling the main */ 
+
+main {
+    padding: 30px;
+    background-color: #eee;
+    text-align: center;
+}
+
+/* styling article */
+
+.article-container {
+    width: 70%;
+    float: left;
+    margin: 10px 0px 20px 10px;
+}
+
+article {
+    border: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+article header {
+    background-color: #ddd;
+    color: #000;
+    text-align: left;
+}
+
+article section {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #eee;
+}
+
+article section #username {
+    margin: 5px 5px 8px 0px;
+}
+
+article section p progress {
+    margin: 2px 5px 2px 2px;
+}
+
+article section details {
+    margin: 10px 5px 10px 5px;
+}
+
+article section details ul {
+    margin: 10px 5px 10px 20px;
+    line-height: 20px;
+}
+
+article section code {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    max-width: 500px;
+}
+
+article section video {
+    margin-top: -30px;
+}
+
+article section form label {
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+
+article section form input {
+    margin-bottom: 5px;
+    display: block;
+}
+
+article section form input[type="submit"], [type="reset"] {
+    margin: 5px 5px 5px 0px;
+    width: 60px;
+    padding: 8px;
+    display: inline-block;
+}
+
+/* fixing the float between sidebar and article */
+
+.clear-fix {
+    clear: both;
+}
+
+/* styling the sidebar */
+
+aside {
+    float: right;
+    width: 25%;
+    margin: 10px 10px 0px 0px;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+}
+
+
+/* if i had a <header> inside the <aside> 
+aside header {
+    text-align: left;
+    padding: 10px;
+    background-color: #999;
+    color: #111;
+} */
+
+aside section h4 {
+    padding: 10px 0px 10px 10px;
+    background-color: #ccc;
+    margin: 5px 5px;
+    border: 1px solid #999;
+}
+
+aside ul {
+    padding: 10px 0px 10px 10px;
+}
+
+aside ul li {
+    padding-bottom: 5px;
+}
+
+/* styling the cpu performance meter */
+
+aside section .cpu_meter {
+   padding: 10px;
+   margin-bottom: 5px;
+}
+
+aside section div form {
+    margin: 5px;
+}
+
+aside section div form input[list="browsers"] {
+    max-width: 90px;
+}
+
+aside section div form span {
+    font-size: 14px;
+    margin: 7px;
+}
+
+aside section div form input[type="submit"] {
+    margin: 5px 5px 5px 0px;
+    width: 60px;
+}
+
+aside section form input[name="age"] {
+    font-size: 14px;
+    margin: 5px;
+    width: 90px;
+}
+
+aside section form output {
+    font-size: 14px;
+    margin: 5px;
+}
+
+aside section audio {
+    margin: 5px;
+    width: 150px;
+    display: block;
+}
+
+aside section div p {
+    margin: 10px;
+}
+
+aside section div label, input[name="disabled"], input[name="readonly"] {
+    margin: 5px;
+    font-size: 14px;
+    width: 130px;
+}
+
+aside section div input[name="disabled"], input[name="readonly"] {
+    padding: 5px 10px;
+    display: block;
+}
+
+/* styling the footer */ 
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
